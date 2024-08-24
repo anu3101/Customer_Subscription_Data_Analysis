@@ -1,6 +1,5 @@
 
 DELETE FROM subscription WHERE CustomerID IS NULL OR TotalCharges IS NULL;
-ANU_DATA.PUBLIC
 
 UPDATE subscription
 SET PaperlessBilling = IFF(PaperlessBilling = 'Yes', 1, 0),
